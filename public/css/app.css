@@ -5,17 +5,12 @@
 body{
   height: 100%; 
   font-family: 'Noto Sans', sans-serif;
-  
+  background-color: #ab4493; 
 }
 
 
 .titulo {
   color: #ab4493;
-}
-
-.enviar {
-  background: blue;
-  color: white;
 }
 
 .contact_form{  
