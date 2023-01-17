@@ -5,12 +5,11 @@
     <title>Ideaworks Formulario</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
-    
 
 </head>
 <body>
  
-  
+  <!-- formulario de contacto en html y css -->  
 
   <div class="contact_form">
   @if(session('status'))
