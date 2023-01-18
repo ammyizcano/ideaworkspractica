@@ -16,6 +16,7 @@ class contactanoscontroller extends Controller
         $post->telefono = $request->telefono;
         $post->mensaje = $request->mensaje;
         $post->save();
-        return redirect('contactanos')->with('status', 'Se ha enviado correctamente');
+        notify()->success("Se ha guardado correctamente");
+        return redirect('contactanos')->with('status', '');
     }
 }

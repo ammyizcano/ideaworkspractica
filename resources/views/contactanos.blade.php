@@ -5,19 +5,17 @@
     <title>Ideaworks Formulario</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
-
+    @notifyCss
 </head>
 <body>
  
-  <!-- formulario de contacto en html y css -->  
-
   <div class="contact_form">
   @if(session('status'))
     <div class="alert alert-success">
         {{ session('status') }}
     </div>
     @endif
-    <div class="formulario">      
+    <div class="formulario">    
       <h1>Formulario de Contactos</h1>
         <h3>Escríbenos e ingresa tus datos:</h3>
 
@@ -51,9 +49,12 @@
                                 </p>                    
               
                 <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>         
-            
+                
           </form>
     </div>  
   </div>  
+  
+  @notifyJs  
+  <x:notify-messages />
 </body>
 </html>
